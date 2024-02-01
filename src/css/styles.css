@@ -1,0 +1,212 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./vite-promo.css');
+@import url('./header.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color:  #5f2592de;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* styles */
+.search-form{
+  place-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+  width: 272px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 16px;
+border: 3px solid #f5c6e7;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.64px;
+color:#f700ad;
+text-align: start;
+margin-bottom: 30px;
+
+}
+.start-btn {
+  margin-top: -10px;
+    width: 75px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fe007f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .start-btn:hover,
+  .start-btn:active {
+    background-color: #df2caf;
+  }
+  
+  .div-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .load-btn{
+    width: 175px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fe007f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    padding: 0;
+    cursor: pointer;
+    
+  }
+  .load-btn:hover,
+  .load-btn:active {
+    background-color: #df2caf;
+  }
+
+  .is-hidden {
+    display: none;
+  }
+  .is-hidden-loader{
+    display: none;
+  }
+  
+  /* gallery */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .gallery {
+    margin-top: 50px;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 24px;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .gallery-descr{
+color:#FFF;
+font-size: 12px;
+  }
+
+  .gallery-item {
+    object-fit: cover;
+    width: calc((100% - 48px) / 3);
+  }
+  
+  .gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.1);
+  transition: transform 250ms ease-in-out;
+} 
+
+  .gallery-image {
+    display: block;
+    /* max-width: 100%; */
+    width: 350px;
+    height: 205px;
+    border-radius: 15px;
+  }
+  .modal-image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+
+  /* loader */
+  .loader {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+    25% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+    }
+    50% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+    }
+    75% {
+      box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+    100% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+  }
+
+  /* loader load */
+  .loader-load{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+    25% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+    }
+    50% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+    }
+    75% {
+      box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+    100% {
+      box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+    }
+  }
