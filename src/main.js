@@ -27,7 +27,6 @@ const refreshPage = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-// const axios = require('axios').default;
 
 
 loader.style.display = 'none';
@@ -52,13 +51,8 @@ function handleSearch(event){
       try {
        
         container.innerHTML = createMarkup(data.hits);
-      // const refreshPage = new SimpleLightbox('.gallery a', {
-      //     captionsData: 'alt',
-      //     captionDelay: 250,
-      //   });
         refreshPage.refresh();
         scrollBy();
-        // ------------кнопка ще
         if(data.totalHits > 0){
           loadMoreBtn.classList.remove(hiddenClass);
           loadMoreBtn.addEventListener("click", handleLoadMore);
@@ -99,15 +93,6 @@ per_page: 40,
 page,
   }
 }).then(({data})=>data)};
-// const url = `${BASE_URL}?key=${API_KEY}&q=${name}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40`;
-
-//     return fetch(url).then((resp)=> {
-//         if(!resp.ok){
-//             throw new Error(resp.statusText);
-//         }
-//         return resp.json();
-//     })
-    
 
 
 function createMarkup(arr) {
@@ -147,11 +132,8 @@ loadMoreBtn.disabled = true;
     
     
     container.insertAdjacentHTML('beforeend', createMarkup(hits));
-    // const refreshPage = new SimpleLightbox('.gallery a', {
-    //   captionsData: 'alt',
-    //   captionDelay: 250,
-    // });
-    refreshPage.refresh();
+
+    Page.refresh();
     scrollBy()
 } catch (error) {
   onFetchError(error);
