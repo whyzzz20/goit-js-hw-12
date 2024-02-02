@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11 </title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>goit-js-hw-12</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
 
-    <section>
-      <form class="search-form">
-      <input type="text" class="search-input"  placeholder="your search" name="query" />
-      <button class="start-btn" type="submit" >Search</button>
-      <span class="loader"></span>
-  </form>
-  
+<body>
+<form class="form-search">
+  <input class="search-box" 
+   type="text" name="search" 
+   autocomplete="off" 
+   placeholder="Search images...">
+  <button class="btn" type="submit">Search</button>
+  </button>
+</form>
+<div class="container">
+    <span class="loader"></span>
     <ul class="gallery"></ul>
-    
-    <div class="div-btn">
-    
-      <button class="load-btn is-hidden" type="submit" >
-        Load more
-        </button>
-    </div>
-    
-    </section>
-    
-
-
-    <script src="./main.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  </body>
+  </div>
+  <div class="load-more">
+    <span class="loader-more"></span>
+   <button class="load-btn" type="submit">Load more</button>
+  </div>
+  <script src="./main.js" type="module" ></script>
+   <span class="scroll-to-top-btn"></span>
+</body>
 </html>
