@@ -2,24 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hw 12</title>
+    <title>goit-js-hw-12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-    <form class="gallery-form" id="gallery-form">
-    <input class="input" id="name" type="text" placeholder="Search images..." />
-    <button class="button" type="submit">Search</button>
+    <form class="form">
+      <input
+        type="text"
+        class="input"
+        name="input"
+        placeholder="Search images..."
+      />
+      <button type="submit" class="search-btn">Search</button>
     </form>
-    </section>
     <ul class="gallery"></ul>
-    <div class="div-loader">
-    <button class="button-load" type="button">Load more</button>
-    <span class="massege">We're sorry, but you've reached the end of search results.</span>
-    <span class="loader">Loading images, please wait...</span>
-    </div>
+    <p class="loader is-hidden"></p>
+    <button type="submit" id="next-btn" class="next-btn is-hidden">
+      Load more
+    </button>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
