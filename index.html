@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>goit-js=hw-12</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  
-  <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-951421c8.js">
-  <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-eb6030bc.css">
-  <link rel="stylesheet" href="/goit-js-hw-12/assets/index-530e62a6.css">
-</head>
-
-<body>
-  <form class="search-form">
-    <input class="input" type="text" name="query" placeholder="Search images..." />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hw 12</title>
+    
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-b725de7c.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-fd638ea2.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-02c24ff0.css">
+  </head>
+  <body>
+    <section>
+    <form class="gallery-form" id="gallery-form">
+    <input class="input" id="name" type="text" placeholder="Search images..." />
     <button class="button" type="submit">Search</button>
-  </form>
-  <div class="loader-sign js-loader is-hidden"><span class="">Loading images, please wait...</span>
-    <div class="loader"></div>
-  </div>
-
-
-  <div class="wrapper-pictures">
-    <ul class="pictures-list">
-
-    </ul>
-  </div>
-  <button class="button load js-load-btn is-hidden">Load more</button>
-
-  
-</body>
-
-</html> 
+    </form>
+    </section>
+    <ul class="gallery"></ul>
+    <div class="div-loader">
+    <button class="button-load" type="button">Load more</button>
+    <span class="massege">We're sorry, but you've reached the end of search results.</span>
+    <span class="loader">Loading images, please wait...</span>
+    </div>
+    
+  </body>
+</html>
